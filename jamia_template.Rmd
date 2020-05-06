@@ -18,7 +18,7 @@ library(pacman)
 p_load(captioner, pander)
 ```
 
-```{r setup_references}
+```{r setup_references, echo =F}
 table_nums <- captioner::captioner(prefix = "Table")
 table.ref <- function(x) {
   stringr::str_extract(table_nums(x), "[^:]*")
